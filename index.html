@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">LaszloDev</div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-button" aria-label="Toggle dark mode">🌙</button>
+    <button class="menu-button" aria-label="Open navigation menu">☰</button>
+</nav>
+
+<main id="home" class="hero">
+    <h1>Welcome to LaszloDev</h1>
+    <p>This is my first responsive navigation bar project.</p>
+</main>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am learning web development step by step by building real projects.
+        This website is part of my HTML, CSS, and JavaScript practice.
+    </p>
+</section>
+
+<section id="services" class="section">
+    <h2>Services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>I can create simple and clean website layouts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive Layouts</h3>
+            <p>I can make websites look good on desktop and mobile.</p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript Features</h3>
+            <p>I can add simple interactive features using JavaScript.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact-section">
+    <h2>Contact</h2>
+    <p>You can contact me for web development practice projects.</p>
+
+    <form class="contact-form" id="contactForm">
+        <input type="text" id="nameInput" placeholder="Your name">
+        <input type="email" id="emailInput" placeholder="Your email">
+        <textarea id="messageInput" placeholder="Your message"></textarea>
+        <button type="submit">Send Message</button>
+        <p id="formMessage" class="form-message"></p>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 LaszloDev. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
