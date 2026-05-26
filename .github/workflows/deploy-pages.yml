@@ -25,22 +25,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Download the repository code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Configure GitHub Pages
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      # Upload the whole project root as the website
-      # This works because index.html is in the root folder
       - name: Upload static files
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: "."
 
-      # Deploy the uploaded files to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
