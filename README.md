@@ -6,7 +6,7 @@ This project started as a responsive navigation bar exercise and grew into a sma
 
 ## Live Demo
 
-The live GitHub Pages link will be added after deployment.
+https://hammerheart92.github.io/demo-website/
 
 ## Features
 
